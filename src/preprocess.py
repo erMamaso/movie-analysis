@@ -3,7 +3,7 @@ import pandas as pd
 def clean_data(input_path, output_path):
     df = pd.read_csv(input_path)
     # In case there is any NULL value, they will be filled with mean value
-    df['rating'] = df['rating'].fillna(df['rating'].mean())
+    df['rating'] = df['rating'].fillna(df['rating'].median())
     # type-conversion
     df['year'] = df['year'].astype(int)
     df['rating'] = df['rating'].astype(float)
