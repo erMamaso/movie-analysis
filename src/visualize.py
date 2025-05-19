@@ -1,5 +1,5 @@
 import pandas as pd
-import matplotlib.pyploy as plt
+import matplotlib.pyplot as plt
 
 def plot_genres(input_path, output_path):
 	df = pd.read_csv(input_path)
