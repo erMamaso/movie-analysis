@@ -6,6 +6,7 @@ def plot_genres(input_path, output_path):
 	genre_counts = df['genre'].value_counts()
 	plt.figure(figsize=(8,6)) #a tuple
 	genre_counts.plot(kind='bar')
+	plt.bar(genre_counts.index, genre_counts.values, color='skyblue')
 	plt.title('Number Movies per Genre')
 	plt.xlabel('Genre')
 	plt.ylabel('Quantity')
