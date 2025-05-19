@@ -1,2 +1,2 @@
 # movie-analysis
-We generated plots to analyze some move genres.
+We cleaned data for analysis
