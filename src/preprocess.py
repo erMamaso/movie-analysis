@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean_data(input_path, output_path):
     df = pd.read_csv(input_path)
     df['rating'] = df['rating'].fillna(df['rating'].median())
